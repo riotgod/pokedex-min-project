@@ -1,0 +1,205 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@700&display=swap');
+
+body{
+   background-color: rgb(255, 255, 255);
+   font-family: 'Dongle', sans-serif;
+ 
+}
+
+
+
+.img-pokeball{
+   border-radius: 50%;
+   background-color: black;
+   opacity: 26%;
+   transform: rotate(-13deg);
+   border: solid 1px green;
+   z-index: 1000;
+   display: flex;
+ 
+}
+
+
+.container{
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   align-items: center;
+   gap: 1rem   ;
+}
+
+.btn-container{
+  display: grid;
+  grid-template-rows: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem ;
+  justify-items: center;
+   width: 100%;
+
+}
+
+.btn-container .p-button{
+   
+   background-color: red;
+   color: white;
+   text-align: start;
+  
+   height: 4rem;
+   border: none;
+   cursor: pointer;
+   border-radius: 9px;
+   justify-content: center;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+}
+.btn-container .p-button img {
+
+  border: 1px solid green;
+  border-radius: 50%;
+  margin-left: 18px;
+  width: 2rem;
+}
+.btn-container .m-button{
+   margin: auto;
+   
+   background: rgb(255,244,0);
+   background: linear-gradient(128deg, rgba(255,244,0,1) 0%, rgba(177,89,1,1) 100%);
+   color: white;
+   text-align: start;
+ 
+   height: 4rem;
+   border: none;
+   cursor: pointer;
+   border-radius: 9px;
+   justify-content: center;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+}
+
+.btn-container .m-button img{
+   border: 1px solid green;
+   
+  width: 2rem;
+}
+
+
+.btn-container button{
+   width: 100%;
+  
+}
+
+.btn-container .e-button {
+   margin: auto;
+   
+   background: rgb(4,110,74);
+   background: linear-gradient(107deg, rgba(4,110,74,1) 0%, rgba(9,28,0,1) 100%);
+   color: white;
+   text-align: start;
+ 
+   height: 4rem;
+   border: none;
+   cursor: pointer;
+   border-radius: 9px;
+   justify-content: center;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+}
+
+.btn-container .e-button img{
+   border: 1px solid pink;
+   width: 2rem;
+}
+
+.btn-container .l-button {
+   margin: auto;
+   background: rgb(0,17,37);
+   background: linear-gradient(107deg, rgba(0,17,37,1) 0%, rgba(0,63,163,1) 100%);
+   color: white;
+   text-align: start;
+   height: 4rem;
+   border: none;
+   cursor: pointer;
+   border-radius: 9px;
+   justify-content: center;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+}
+.btn-container .l-button img{
+   width: 3rem;
+}
+
+.form-search{
+   width: 100%;
+   max-width: 700px;
+   background-color: rgba(46,43,44, 0.2);
+   display: flex;
+   align-items: center;
+   border-radius: 60px;
+   
+}
+.form-search input{
+   background-color: transparent;
+  
+   border: 0;
+   outline: none;
+  
+   font-size: 20px;
+   color: #5E5B5C;
+}
+::placeholder{
+  color:#5E5B5C ; 
+}
+.form-search .btn-search{
+   
+   outline: none;
+   background-color: transparent;
+   border: 0;
+   border-radius: 50%;
+   width: 60px;
+   height: 60px;
+   cursor: pointer;
+
+}
+
+/*Image/carrousel section*/
+.video-container{
+   padding: 0 35px;
+   max-width: 1200px;
+   display: flex;
+   position: relative;
+   align-items: center;
+   
+}
+.carrusel{
+   overflow: hidden;
+   white-space: nowrap;
+   cursor: pointer;
+}
+.carrusel img{
+   object-fit: cover;
+   width: calc(100% / 3);
+   margin-left: 1rem;
+}
+.carrusel img:first-child{
+   margin-left: 0px;
+}
+
+.img-container{
+  border: 1px solid green;
+}
+
+@media screen and (max-width: 900px) {
+   .carrusel img{
+      width: calc(100% / 2);
+   }
+}
+@media screen and (max-width: 550px) {
+   .carrusel img{
+      width: 100%;
+   }
+}
